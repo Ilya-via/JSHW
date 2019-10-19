@@ -1,5 +1,4 @@
-console.log('%cЗадание 11', 'padding: 20px 0 0 0; font-weight: bold;');
-
+console.log('%cЗадание 2', 'padding: 20px 0 0 0; font-weight: bold;');
 function isInteger(num) {
     return (num ^ 0) === num;
 }
@@ -16,7 +15,7 @@ function triangleHeigt() {
             space = "";
             check = "";
             for (j = 0; j < triangleHeight - i; j++) space += " ";
-            for (j = 0; j < 2 * i + 1; j++) check += "^";
+            for (j = 0; j < 2 * i + 1; j++) check += "*";
             console.log(space + check);
             i++;
         }
@@ -32,3 +31,4 @@ function triangleHeigt() {
     }
 }
 triangleHeigt()
+
