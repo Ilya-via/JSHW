@@ -9,12 +9,13 @@
     width: 1170px;
     padding: 0 15px;
 }
+
 .element {
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
     text-align: center;
-    }
+}
 
 .hidden {
     display: none;
@@ -26,7 +27,7 @@
 
 /* Блок сообщения */
 #message {
-    margin: 15px 0;
+    margin: 0;
     padding: 20px;
     background-color: green;
     color: white;
@@ -34,9 +35,9 @@
     height: 250px;
     transition: all 1s ease-out;
     position: fixed;
-    top: 5%;
+    top: 50px;
     right: 5%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
@@ -76,16 +77,17 @@ button p {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
+
 button {
-background-color: #00bc9c;
-background-repeat: no-repeat;
-vertical-align: middle;
-width: 200px;
-height: 65px;
-border: 0;
-cursor: pointer;
-margin: 50px auto;
-border-radius: 10px;
-border: none;
-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #00bc9c;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 200px;
+    height: 65px;
+    border: 0;
+    cursor: pointer;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
