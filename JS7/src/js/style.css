@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0 !important;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0 15px;
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.opacityNone {
+    opacity: 0;
+}
+
+/* Блок сообщения */
+#message {
+    margin: 0;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 400px;
+    height: 250px;
+    transition: all 1s ease-out;
+    position: fixed;
+    top: 50px;
+    right: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#message p {
+    margin: 100px -50px 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Крестик */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    float: right;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+button:hover {
+    background: rgba(255, 166, 0, 0.8);
+    border-radius: 2%;
+    border-radius: 10px;
+    border: 0;
+}
+
+button p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+button {
+    background-color: #00bc9c;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 200px;
+    height: 65px;
+    border: 0;
+    cursor: pointer;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
