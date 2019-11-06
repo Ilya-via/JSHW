@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0 !important;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0 15px;
+}
+
+button p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+button {
+    background-color: #00bc9c;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 200px;
+    height: 65px;
+    border: 0;
+    cursor: pointer;
+    margin: 50px auto;
+    border-radius: 10px !important;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.errorMessage {
+    border-color: #a94442 !important;
+    color: #a94442 !important;
+}
