@@ -13,6 +13,7 @@
 .element {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: column nowrap;
     text-align: center;
 }
@@ -29,15 +30,12 @@
 #message {
     margin: 0;
     padding: 20px;
-    background-color: rgb(212, 180, 71);
+    background-color: #28a745;
     color: white;
     width: 400px;
     height: 250px;
     transition: all 1s ease-out;
-    position: fixed;
-    top: 50px;
-    right: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
@@ -89,5 +87,5 @@ button {
     margin: 50px auto;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
