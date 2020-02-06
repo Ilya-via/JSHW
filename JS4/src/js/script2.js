@@ -20,10 +20,10 @@ function makeFirstTriangle(num) {
 }
 
 function triangleHeigt() {
-    var triangleHeight = +prompt('Введите высоту треугольника', '')
-    if (!isInteger(triangleHeight) || triangleHeight == 0 || triangleHeight < 0) {
-        alert('Введите натуральное число', '');
-        triangleHeigt()
+    var triangleHeight = +prompt('Введите высоту треугольника меньше 71', '')
+    if (!isInteger(triangleHeight) || triangleHeight == 0 || triangleHeight < 0 || !(triangleHeight <71)) {
+        alert('Введите натуральное число меньше 71', '');
+        triangleHeigt();
     } else {
         makeFirstTriangle(triangleHeight)
         makeSecondTriangle(triangleHeight)

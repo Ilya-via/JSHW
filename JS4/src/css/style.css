@@ -5,13 +5,15 @@
 * p {
     margin: 0;
     padding: 0;
-
 }
 
 .container {
     width: 1170px;
     margin: 0 50px;
     padding: 15px;
+}
+.container>p {
+    padding-left: 20px;
 }
 
 h2 {
@@ -37,6 +39,7 @@ pre {
 .opacityNone {
     opacity: 0;
 }
+
 
 /* Блок сообщения */
 #message {
@@ -91,4 +94,73 @@ button {
     border-radius: 10px;
     border: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Accordion */
+.accordion-container {
+    position: relative;
+    align-self: flex-start;
+    width: 400px;
+    height: auto;
+}
+
+.content,
+.set:not(:first-child) {
+    margin-top: 8px;
+}
+
+.set {
+    position: relative;
+    width: 360px;
+    height: auto;
+}
+
+.set>a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    height: 70px;
+    border-radius: 10px;
+    place-items: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.set>a span {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.set>a.active {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 2% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.content pre {
+    padding: 8px 15px;
+    margin: 0;
+    color: #000;
+    text-align: left;
+    font-size: 16px;
 }

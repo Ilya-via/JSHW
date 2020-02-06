@@ -1,21 +1,272 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/bender.ico">
-    <title>IL-VIA</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+    </script>
+    <title>JS3</title>
 </head>
+
 <body>
+    <div class="container">
+
+        <ol>
+            <li>Дан массив с элементами [1, 2, 3, 4, 5]. С помощью цикла for выведите все эти элементы на экран.</li>
+            <li>Дан массив с числами [-2, -1, -3, 15, 0, -4, 2, -5, 9, -15, 0, 4, 5, -6, 10, 7]. Числа могут быть
+                положительными и отрицательными. Выведите на экран только отрицательные числа, которые больше -10, но
+                меньше -3.</li>
+            <li>Создайте новый массив и заполните его значениями от 23 до 57, используя цикл for и while. Выведите оба
+                массива. С помощью цикла for найдите сумму элементов этого массива. Запишите ее в переменную result и
+                выведите.</li>
+            <li>Дан массив числами (строчного типа), например: [‘10’, ‘20’, ‘30’, ‘50’, ‘235’, ‘3000’]. Выведите на
+                экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.</li>
+            <li>Составьте массив дней недели (ПН, ВТ, СР и т.д.). С помощью цикла for выведите все дни недели, а
+                выходные дни выведите жирным.</li>
+            <li>Создайте массив с произвольными данными. Добавьте в конец массива любой элемент, и получите последний
+                элемент массива, используя свойство length.</li>
+            <li>Запросите у пользователя по очереди числовые значения при помощи prompt и сохраните их в массив.
+                Собирайте числа до тез пор пока пользователь не введет пустое значение. Выведите получившийся массив на
+                экран. Выполните сортировку чисел массива, и выведите его на экран.</li>
+            <li>Переверните массив [12, false, ‘Текст’, 4, 2, -5, 0] (выведите в обратном порядке), используя цикл for
+                и метод reverse.</li>
+            <li>Напишите скрипт, считающий количество нулевых (пустых) элементов в заданном целочисленном массиве [5, 9,
+                21, , , 9, 78, , , , 6].</li>
+            <li>Найдите сумму элементов массива между двумя нулями (первым и последним нулями в массиве). Если двух
+                нулей нет в массиве, то выведите ноль. В массиве может быть более 2х нулей. Пример массива: [48, 9, 0, 4, 21, 2, 1, 0, 8, 84, 76, 8, 4, 13, 2] или [1, 8, 0, 13, 76, 8, 7, 0, 22, 0, 2, 3, 2].</li>
+            <li>Нарисовать равнобедренный треугольник из символов *. Высоту выбирает пользователь.</li>
+        </ol>
+
+        <button type="submit" onclick="messageVisible()">
+            <p>Исходный Код</p>
+        </button>
+
+        <div class="hidden opacityNone" id="message">
+            <span class="closebtn" onclick="messageUnvisible()">&times;</span>
+
+
+            <h3>Задание 1</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 1', 'padding: 20px 0 0 0; font-weight: bold;');
+var arr = [1, 2, 3, 4, 5];
+//  var arr = ['gg','ff','hh','jj','kk'];
+for (var i = 0; i <= arr.length; i++) console.log(arr[i]);
+</pre>
+            </code>
+
+            <h3>Задание 2</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 2', 'padding: 20px 0 0 0; font-weight: bold;');
+var massive = [-2, -1, -3, 15, 0, -4, 2, -5, 9, -15, 0, 4, 5, -6, 10, 7];
+for (var i = 0; i < massive.length; i++) {
+    if (massive[i] > -2) continue;
+    if (massive[i] < -9) continue;
+    console.log(massive[i]);
+}
+</pre>
+            </code>
+
+            <h3>Задание 3</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 3', 'padding: 20px 0 0 0; font-weight: bold;');
+
+<span class="comment">// Заполнение массива</span>
+var arr = [];
+for (var i = 22, j = 0; i < 57, j < 35; i++ , j++) {
+    arr[j] = (i + 1);
+}
+console.log(arr);
+
+var arr = [], i = 22, j = 0;
+while (i++ < 57, j++ < 35) arr[j - 1] = i;
+console.log(arr);
+
+<span class="comment">// Сумма</span>
+var a = 57, result = 0;
+for (var i = 22; i <= a; i++) {
+    result = 0;
+    for (var j = 1; j <= i; j++) result += j;
+}
+console.log('Сумма чисел [23;57] = ' + result);
+</pre>
+            </code>
+
+            <h3>Задание 4</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 4', 'padding: 20px 0 0 0; font-weight: bold;');
+var massive = ['10', '20', '30', '50', '235', '3000'];
+var d = massive.length;
+for (var i = 0; i < d; i++) {
+    str = massive[i] + "";
+    if (str[0] === '1' || str[0] === '2' || str[0] === '5') {
+        console.log(massive[i]);
+    }
+}
+</pre>
+            </code>
+
+            <h3>Задание 5</h3>
+            <code>
+                <pre>
+document.write('&#60;h1>Задание 5&#60;/h1>' + '&#60;style> h1 {padding: 15px 15px 7px; font-size: 26px;} &#60;/style>');
+var massive = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
+for (var i = 0; i < massive.length; i++) {
+    if (i == 5 || i == 6) {
+        document.write('&#60;b>&#60;span>' + massive[i] + '&#32;&#60;span>&#60;/b>');
+    }
+    else {
+        document.write('&#60;span>' + massive[i] + '&#60;/span>' + '  ');
+    }
+}
+</pre>
+            </code>
+
+            <h3>Задание 6</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 6', 'padding: 20px 0 0 0; font-weight: bold;');
+var massive = ['gg', 'ff', 'hh', 'jj', 'kk', 'dd', 'ss', 'aa', 'qq', 'ww'];
+massive.push('ee');
+console.log(massive[massive.length- 1]);
+</pre>
+            </code>
+
+            <h3>Задание 7</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 7','padding: 20px 0 0 0; font-weight: bold;');
+var value = 1;
+var arr = [];
+for (var i = 0; value != ''; i++) {
+    value = prompt('Введите несколько чисел / оставьте поле пустым чтобы продолжить');
+    if (value != '') {
+        arr.push(value);
+    }
+    else continue;
+}
+console.log(arr);
+</pre>
+            </code>
+
+            <h3>Задание 8</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 8', 'padding: 20px 0 0 0; font-weight: bold;');
+
+var massiveForReverse = [12, false, 'Текст', 4, 2, -5, 0];
+console.log(massiveForReverse);
+var box = [];
+var b = massiveForReverse.length;
+for (var i = 0; i < b/2; i++) {
+    box = massiveForReverse[i];
+    massiveForReverse[i] = massiveForReverse[b - i - 1];
+    massiveForReverse[b - i - 1] = box;
+}
+console.log(massiveForReverse);
+</pre>
+            </code>
+
+            <h3>Задание 9</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 9', 'padding: 20px 0 0 0; font-weight: bold;');
+var arr = [1, '', 2, '', 3, '', '', 5, '', ''];
+var count = 0;
+var b = arr.length;
+for (var i = 0; i < b; i++) {
+    if (arr[i] == '') {
+        count++;
+    }
+}
+console.log(count);
+</pre>
+            </code>
+
+            <h3>Задание 10</h3>
+            <code>
+                <pre>
+    console.log('%cЗадание 10', 'padding: 20px 0 0 0; font-weight: bold;');
+    var massiveForSumm = [1, -8, 0, 13, 76, 8, 7, 0, 22, 0, 2, -2, 2];
+    console.log(massiveForSumm);
+    var b = massiveForSumm.length;
+    var firstValue = massiveForSumm.indexOf(0, 0);
+    var lastValue = massiveForSumm.lastIndexOf(0, b - 1);
+    
+    var s = 0;
+    for (var i = firstValue; i <= lastValue; i++) {
+        for (var j = massiveForSumm[i]; i <= lastValue; i++) {
+            s += j;
+            break;
+        }
+    }
+    console.log('%cСумма элементов между первым и последним нулём в массиве =','color: green; font-weight: bold;' , s);
+</pre>
+            </code>
+
+            <h3>Задание 11</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 11', 'padding: 20px 0 0 0; font-weight: bold;');
+function isInteger(num) {
+  return (num ^ 0) === num;
+}
+
+function makeTriangle(num) {
+  var i = 0, j = 0;
+  var space = "",
+    check = "";
+
+  while (i < num) {
+    space = "";
+    check = "";
+    for (j = 0; j < num - i; j++) space += " ";
+    for (j = 0; j < 2 * i + 1; j++) check += "^";
+    console.log(space + check);
+    i++;
+  }
+}
+
+function triangleHeigt() {
+  var triangleHeight = +prompt('Введите высоту треугольника меньше 71', '')
+  if (!isInteger(triangleHeight) || triangleHeight == 0 || !(triangleHeight < 71))  {
+    alert('Введите натуральное число меньше 71', '');
+    triangleHeigt()
+  } else {
+    makeTriangle(triangleHeight)
+  }
+}
+triangleHeigt()
+</pre>
+            </code>
+        </div>
+
+        <div class="btn-scrollUp" onmousedown="selectionScrollButton()" onmouseup="noselectionScrollButton()"
+        onmouseout="noselectionScrollButton()">
+        <a><span></span><span></span></a>
+    </div>
+    </div>
+
+
+        
     <script src="js/script1.js"></script>
     <script src="js/script2.js"></script>
     <script src="js/script3.js"></script>
     <script src="js/script4.js"></script>
     <script src="js/script5.js"></script>
     <script src="js/script6.js"></script>
-    <script src="js/script7.js"></script>
+    <!-- <script src="js/script7.js"></script> -->
     <script src="js/script8.js"></script>
     <script src="js/script9.js"></script>
     <script src="js/script10.js"></script>
     <script src="js/script11.js"></script>
+    <script src="js/other.js"></script>
 </body>
+
 </html>

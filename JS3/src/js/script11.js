@@ -1,12 +1,12 @@
 console.log('%cЗадание 11', 'padding: 20px 0 0 0; font-weight: bold;');
 function isInteger(num) {
-    return (num ^ 0) === num;
+  return (num ^ 0) === num;
 }
 
 function makeTriangle(num) {
   var i = 0, j = 0;
   var space = "",
-      check = "";
+    check = "";
 
   while (i < num) {
     space = "";
@@ -19,12 +19,12 @@ function makeTriangle(num) {
 }
 
 function triangleHeigt() {
-    var triangleHeight = +prompt('Введите высоту треугольника', '')
-    if (!isInteger(triangleHeight) || triangleHeight == 0)  {
-        alert('Введите натуральное число', '');
-        triangleHeigt()
-    } else {
-       makeTriangle(triangleHeight)
-    }
+  var triangleHeight = +prompt('Введите высоту треугольника меньше 71', '')
+  if (!isInteger(triangleHeight) || triangleHeight == 0 || !(triangleHeight < 71))  {
+    alert('Введите натуральное число меньше 71', '');
+    triangleHeigt()
+  } else {
+    makeTriangle(triangleHeight)
+  }
 }
 triangleHeigt()

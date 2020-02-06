@@ -5,7 +5,6 @@
 * p {
     margin: 0;
     padding: 0;
-
 }
 
 .container {
@@ -13,7 +12,12 @@
     margin: 0 50px;
     padding: 15px;
 }
-
+.container>p {
+    padding-left: 20px;
+}
+ol>li:not(:first-child) {
+    margin-top: 7px;
+}
 h2 {
     padding-top: 20px;
 }
@@ -37,6 +41,7 @@ pre {
 .opacityNone {
     opacity: 0;
 }
+
 
 /* Блок сообщения */
 #message {
@@ -91,4 +96,57 @@ button {
     border-radius: 10px;
     border: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Animated scroll */
+.btn-scrollUp {
+    position: fixed;
+    bottom: 75px;
+    right: 22px;
+    background-color: rgba(14, 134, 64, .5);
+    border-radius: 25%;
+    -webkit-transition: .3s linear;
+    transition: .3s linear
+}
+
+.btn-scrollUp a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer
+}
+
+.btn-scrollUp a span {
+    display: block;
+    height: 3px;
+    width: 12px;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.btn-scrollUp a span:first-child {
+    margin-right: -2.5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.btn-scrollUp a span:last-child {
+    margin-left: -2.5px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg)
+}
+
+.btn-scrollUp:hover {
+    background-color: #0e8640;
+    -webkit-transition: .3s linear;
+    transition: .3s linear
 }

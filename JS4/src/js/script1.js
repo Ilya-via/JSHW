@@ -48,9 +48,10 @@ function switchGroup() {
     itNumb(userGroup)
 }
 function itNumb(userGroup) {
+
     if (userGroup == 0 || !Number.isInteger(userGroup) || userGroup < 0) {
         alert('Введите натуральное число', '');
-        switchGroup()
+        switchGroup();
     }
 }
 
