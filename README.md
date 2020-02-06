@@ -3,6 +3,22 @@
 <br>
 <br>
 <br>
+
+<h2>JS7</h2>
+<ul>
+    <li>С сайта jsonplacehlider.typicode.com/posts загружается информация, которая формируется в блок новостей со своим заголовком и, собственно, новостями.</li>
+    <li>Добавлен Progress Bar.</li>
+    <li>Использован Bootstrap.</li>
+</ul>
+<br>
+<br>
+
+<h2>JS8</h2>
+<b>Простая форма на Bootstrap с валидацией</b>
+<br>
+<br>
+<br>
+
 <h2>JS9</h2>
 <!DOCTYPE html>
 <html lang="ru">
