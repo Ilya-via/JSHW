@@ -8,7 +8,7 @@
 <br>
 <ul>
     <li>Через setTimeout значение opacity изменяетя от 0 до 1.</li>
-    <li>После этого удаляется свойство display: none; у блока, имеющего .hidden</li>
+    <li>После этого удаляется свойство display: none у блока, имеющего .hidden.</li>
 </ul>
 <br>
 
