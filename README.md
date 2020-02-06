@@ -7,8 +7,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Test explorers</title>
- 
 </head>
 
 <body>
@@ -25,16 +23,16 @@
         </div>
 <h4>Надо развернуть этот список, таким образом, чтобы на первом месте оказался топоним, а на остальных
                 исследователи.</h4>
-        <div>
+        
             <h2>Формат ввода</h2>
             <p>[</p>
             <p class="space">["Mallory", "Everest", "Mont Blanc", "Pillar Rock"],</p>
             <p class="space">["Mawson", "South Pole", "New Hebrides"],</p>
             <p class="space">["Hillary", "Everest", "South Pole"]</p>
             <p>]</p>
-        </div>
+       
 
-        <div>
+       
             <h2>Формат вывода</h2>
             <p>[</p>
             <p class="space">["Everest", "Hillary", "Mallory"],</p>
@@ -43,7 +41,7 @@
             <p class="space">["Pillar Rock", "Mallory"],</p>
             <p class="space">["New Hebrides", "Mawson"]</p>
             <p>]</p>
-        </div>
+        
 
  </body>
 
