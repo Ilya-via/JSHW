@@ -1,6 +1,6 @@
-console.log('%cЗадание 6','padding: 20px 0 0 0; font-weight: bold;');
-var a = 5,
-    b = 7,
-    h = 10,
-    STrap = ((a + b) / 2) * h;
-console.log('1)', STrap, 'см2');
+console.log('%cЗадание 7','padding: 20px 0 0 0; font-weight: bold;');
+var S = 2,
+    p = 0.1,
+    years = 5,
+    Pereplata = (S * p * years);
+console.log('1)', Pereplata, 'млн. руб');

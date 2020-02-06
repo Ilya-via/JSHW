@@ -1,11 +1,225 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/bender.ico">
-    <title>IL-VIA</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+    </script>
+    <title>JS2</title>
 </head>
+
 <body>
+    <div class="container">
+
+        <ol>
+            <li>Переделайте приведенный код так, чтобы в нем использовались операции +=, -=, *=, /=,
+                ++, --. Количество строк кода при этом не должно измениться. Код для переделки:
+                var num = 1;
+                num = num + 12;
+                num = num - 14;
+                num = num * 5;
+                num = num / 7;
+                num = num + 1;
+                num = num - 1;
+                num = num + 7;
+                num = num - 18;
+                num = num * 10;
+                num = num / 15;
+                console.log(num);</li>
+            <li>Создайте три числовые переменные: час, минута, секунда. С их помощью выведите
+                время в формате час:минута:секунда'.</li>
+            <li> Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым
+                символом этой строки является буква 'a'. Если это так - выведите 'да', в противном
+                случае выведите 'нет'.</li>
+            <li>Создайте переменную str и присвойте ей значение «В некиим царстве, в некиим
+                государстве жил-был богатый купец, именитый человек». Выведите на экран только
+                фразу «богатый купец».</li>
+            <li>Дана строка из 3-х цифр. Найдите сумму этих цифр. То есть сложите как числа первый
+                символ строки, второй и третий.</li>
+            <li>Если переменная a равна 10, то выведите 'Верно', иначе выведите 'Неверно'.</li>
+            <li>Если переменная a равна 'test', то выведите 'Верно', иначе выведите 'Неверно'.
+                Проверьте работу скрипта при a, равном 'test', 'тест', 3.</li>
+            <li>Если переменная a равна или меньше 1, а переменная b больше или равна 3, то
+                выведите сумму этих переменных, иначе выведите их разность (результат вычитания).
+                Проверьте работу скрипта при a и b, равном 1 и 3, 0 и 6, 3 и 5.</li>
+            <li>Создайте переменную name, login и pass. С помощью ф-ции prompt() получите
+                соответствующие значения: «Ваше имя», «Введите логин», «Ваш пароль». Выведите на
+                экран «Добро пожаловать, %Имя%! Вы успешно вошли на сайт.», если логин и пароль
+                равны 'admin' и 'nimda', иначе «%Имя%, вы неверно ввели логин или пароль!».</li>
+            <li>Переменная month может принимать значения от 1 до 12. Если она имеет значение 1, 2
+                или 12, то в переменную season запишем 1, если имеет значение 3, 4 или 5 – 2 и так далее. После
+                определения сезона, определите пору года и запишите значение в
+                переменную seasonName: если 1, то 'Зима', если 2 - 'Лето' и т.д. Определение поры года
+                написать через switch.</li>
+        </ol>
+
+        <button type="submit" onclick="messageVisible()">
+            <p>Исходный Код</p>
+        </button>
+
+        <div class="hidden opacityNone" id="message">
+            <span class="closebtn" onclick="messageUnvisible()">&times;</span>
+
+
+            <h3>Задание 1</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 1','padding: 20px 0 0 0; font-weight: bold;');
+var num = 1; 
+num += 12;
+num -= 14; 
+num *= 5; 
+num /= 7; 
+num += 1; 
+num -= 1; 
+num += 7;
+num -= 18;
+num *= 10;
+num /= 15; 
+console.log(num); 
+</pre>
+            </code>
+
+            <h3>Задание 2</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 2','padding: 20px 0 0 0; font-weight: bold;');
+var seconds = 12;
+var minutes = 49;
+var hours = 8;
+console.log(hours + ":" + minutes + ":" + seconds);
+</pre>
+            </code>
+
+            <h3>Задание 3</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 3','padding: 20px 0 0 0; font-weight: bold;');
+var string = 'abcde';
+<span class="comment">// Метод charAt() возвращает указанный символ из строки. Целое число от 0 до длины строки минус 1.</span>
+var first = string.charAt(0);
+if (first == 'a') {
+    console.log('%cда','color: green;');
+}
+else console.log('%cнет','color: red;');
+</pre>
+            </code>
+
+            <h3>Задание 4</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 4','padding: 20px 0 0 0; font-weight: bold;');
+var string = 'В некиим царстве, в некиим государстве жил-был богатый купец, именитый человек';
+<span class="comment">// Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.</span>
+if(string.indexOf('богатый купец') > 0) {
+    console.log('%cбогатый купец','color: green;');
+}
+else console.log('%cНе найдено','color: red;');
+</pre>
+            </code>
+
+            <h3>Задание 5</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 5','padding: 20px 0 0 0; font-weight: bold;');
+var string = '937';
+var first = Number(string.charAt(0));
+var second = Number(string.charAt(1));
+var third = Number(string.charAt(2));
+var sum = first + second + third;
+console.log(sum);
+</pre>
+            </code>
+
+            <h3>Задание 6</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 6', 'padding: 20px 0 0 0; font-weight: bold;');
+var a = 10;
+if (a == 10) {
+    console.log('%cВерно', 'color: green;');
+}
+else console.log('%cНе верно', 'color: red;');
+</pre>
+            </code>
+
+            <h3>Задание 7</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 7','padding: 20px 0 0 0; font-weight: bold;');
+var a = 3;
+if (a === 'test') {
+    console.log('%cВерно','color: green;');
+}
+else console.log('%cНе верно','color: red;');
+</pre>
+            </code>
+
+            <h3>Задание 8</h3>
+            <code>
+                <pre>
+console.log('%cЗадание 8','padding: 20px 0 0 0; font-weight: bold;');
+var a = 0;
+var b = 6;
+if (a <= 1 && b >= 3) {
+    console.log(a + b);
+}
+else console.log(a - b);
+</pre>
+            </code>
+
+            <h3>Задание 9</h3>
+            <code>
+                <pre>
+var name = prompt('Ваше имя', name);
+var login = prompt('Введите логин (admin)', login);
+var pass = prompt('Ваш пароль (nimda)', pass);
+if (login === 'admin' && pass === 'nimda') {
+    alert('Добро пожаловать,' + name + ' Вы успешно вошли на сайт.');
+}
+else alert('Введён неверный логин или пароль.');
+</pre>
+            </code>
+
+            <h3>Задание 10</h3>
+            <code>
+                <pre>
+var months = prompt('Введите номер месяца чтобы получить пору года', months);
+var monthsNumb = Number(months);
+var season = Number;
+switch(monthsNumb) {
+    case 1: season = "winter"; break;
+    case 2: season = "winter"; break;
+    case 3: season = "spring"; break;
+    case 4: season = "spring"; break;
+    case 5: season = "spring"; break;
+    case 6: season = "summer"; break;
+    case 7: season = "summer"; break;
+    case 8: season = "summer"; break;
+    case 9: season = "autumn"; break;
+    case 10: season = "autumn"; break;
+    case 11: season = "autumn"; break;
+    case 12: season = "winter"; break;
+    default: alert('Такого месяца нет.');
+}
+if (monthsNumb > 0 && monthsNumb < 13) {
+    alert(season);
+}
+</pre>
+            </code>
+
+        </div>
+
+        <div class="btn-scrollUp" onmousedown="selectionScrollButton()" onmouseup="noselectionScrollButton()"
+            onmouseout="noselectionScrollButton()">
+            <a><span></span><span></span></a>
+        </div>
+
+    </div>
+
     <script src="js/script1.js"></script>
     <script src="js/script2.js"></script>
     <script src="js/script3.js"></script>
@@ -16,5 +230,7 @@
     <script src="js/script8.js"></script>
     <script src="js/script9.js"></script>
     <script src="js/script10.js"></script>
+    <script src="js/other.js"></script>
 </body>
+
 </html>

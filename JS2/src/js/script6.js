@@ -1,7 +1,6 @@
-console.log('%cЗадание 6','padding: 20px 0 0 0; font-weight: bold;');
+console.log('%cЗадание 6', 'padding: 20px 0 0 0; font-weight: bold;');
 var a = 10;
-// Произведём приведение типов операндов (оператор нестрогого равенства "==" базовый, а оператор строгого равенства добавляет ещё одно условие - требует, чтобы оба операнда были одного и того же типа).
 if (a == 10) {
-    console.log('%cВерно','color: green;');
+    console.log('%cВерно', 'color: green;');
 }
-else console.log('%cНе верно','color: red;');
+else console.log('%cНе верно', 'color: red;');

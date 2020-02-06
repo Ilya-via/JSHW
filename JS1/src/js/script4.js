@@ -1,4 +1,4 @@
-console.log('%cЗадание 4','padding: 20px 0 0 0; font-weight: bold;');
-var HCilindra = 10,
-VCilindra = (Math.PI * Math.pow(a7, 2) / 4) * HCilindra;
-console.log('1)', VCilindra, 'м3');
+console.log('%cЗадание 5','padding: 20px 0 0 0; font-weight: bold;');
+var r = 5,
+SKruga = (Math.PI * Math.pow(r, 2));
+console.log('1)', SKruga, 'см2');

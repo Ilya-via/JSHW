@@ -3,52 +3,148 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>First blood</title>
+    <title>JS1</title>
     <link rel="shortcut icon" href="img/bender.ico">
 
-    <script defer src="js/script2.js"></script>
-    <script defer src="js/script4.js"></script>
-    <script defer src="js/script3.js"></script>
-    <script defer src="js/script5.js"></script>
-    <script defer src="js/script6.js"></script>
-    <script defer src="js/script7.js"></script>
-    <script defer src="js/script8.js"></script>
+    <style>
+        * {
+            outline: 0 !important;
+        }
+
+        * p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1170px;
+            margin: 0 50px;
+            padding: 15px;
+        }
+
+        ol>li:not(:first-child) {
+            margin-top: 7px;
+        }
+
+        ol>li:nth-child(9)>p:not(:first-child),
+        ol>li:nth-child(8)>p:not(:first-child),
+        ol>li:nth-child(2)>p:not(:first-child) {
+            padding-left: 40px;
+        }
+
+        ul>li:not(:first-child) {
+            margin-top: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <script>
-        var str = '&#34;Привет&#34;',
-            sum = 123,
-            num = 15.8,
-            flag = true,
-            txt = 'true';
-        console.log('%cЗадание 1', 'padding: 20px 0 0 0; font-weight: bold;');
-        console.log(typeof str, typeof sum, typeof num, typeof flag, typeof txt);
-    </script>
-    <script>
-        console.log('%cЗадание 9', 'padding: 20px 0 0 0; font-weight: bold;');
-        console.log('Бывало, спит у ног собака,');
-        console.log('костер занявшийся гудит,');
-        console.log('и женщина из полумрака');
-        console.log('%cглазами зыбкими глядит.', 'padding: 0 0 30px 0;');
-        console.log('Потом под пихтою приляжет');
-        console.log('на куртку рыжую мою');
-        console.log('%cи мне, адумчивая, скажет:', 'padding: 0 0 30px 0;');
-        console.log('«А ну-ка, спой!..» - и я пою.');
-    </script>
-    <script>
-        console.log('%cЗадание 10', 'padding: 20px 0 0 0; font-weight: bold;');
+    <div class="container">
 
-        var string_1 = ' индо земля зашаталась под ногами - и вырос',
-            string_2 = ' и заревел он голосом диким...',
-            string_3 = ' блеснула молния и ударил гром,',
-            string_4 = ' а так какое - то чудище, страшное и мохнатое,',
-            string_5 = ' как будто из - под земли, перед купцом:',
-            string_6 = 'Он подошёл и сорвал аленький цветочек.',
-            string_7 = ' зверь не зверь, человек не человек,',
-            string_8 = ' В ту же минуту, безо всяких туч,';
-        var text = string_6 + string_8 + string_3 + string_1 + string_5 + string_7 + string_4 + string_2 ;
-        console.log(text);
-    </script>
+        <ol>
+            <li>
+                <p><b>Определите переменные str, sum, num, flag и txt со значениями «Привет», 123, 15.8,
+                        true, «true», соответственно. При помощи оператора определения типа (typeof)
+                        убедитесь, что переменные принадлежат типам: string, number или boolean. Выведите в
+                        консоль (console.log()) типы операторов.</b></p>
+            </li>
+            <li>
+                <p><b>Создайте переменные a1, a2, a3, a4, a5, a6, a7 (нужна для решения 4 задания), a8, a9,
+                        a10, a11, a12, a13, a14, a15, a16, a17, a18. Поместите в них и выведите в консоль
+                        результат выражений:</b></p>
+
+                <p>5 % 3;</p>
+                <p>3 % 5;</p>
+                <p>5 + '3';</p>
+                <p>'5' – 3;</p>
+                <p>75 + 'кг';</p>
+                <p>785 * 653;</p>
+                <p>100 / 25;</p>
+                <p>0 * 0;</p>
+                <p>0 / 2;</p>
+                <p>89 / 0;</p>
+                <p>98 + 2;</p>
+                <p>5 – 98;</p>
+                <p>(8 + 56 * 4) / 5;</p>
+                <p>(9 - 12) * 7 / (5 + 2);</p>
+                <p>+"123";</p>
+                <p>1 || 0;</p>
+                <p>false || true;</p>
+                <p>true > 0.</p>
+
+                <p>Проверьте (выведите в консоль) каким типам принадлежат переменные.</p>
+            </li>
+            <li>
+                <p><b>Напишите скрипт, который находит площадь прямоугольника высотой 23см и
+                        шириной 10см, значение высоты и ширины должны хранится в width и height,
+                        соответственно, а значение площади должно хранится в числовой переменной SPryam.</b></p>
+            </li>
+            <li>
+                <p><b>Напиши скрипт, который находит объем цилиндра высотой 10м и диаметром
+                        основания равным значению переменной a7 из задания 2, результат поместите в
+                        переменную VCilindra.</b></p>
+            </li>
+            <li>
+                <p><b>Найдите площадь круга (SKruga) с радиусом 5см (r).</b></p>
+            </li>
+            <li>
+                <p><b>Найдите площадь трапеции (STrap) с основаниями 5см (a) и 7см (b), и высотой 10см
+                        (h).</b></p>
+            </li>
+            <li>
+                <p><b>Даны: размер ипотечного кредита (S - 2 млн. руб), процентная годовая ставка (p - 10%),
+                        кол-во лет (years - 5). Найти переплату по кредиту, значение переплаты должно
+                        содержаться в переменной Pereplata.</b></p>
+            </li>
+
+            <li>
+                <p><b>Решите уравнения (найдите неизвестный x), где a = 8, b = 3:</b></p>
+                <p>a+2(x-b)=16;</p>
+                <p>b(x+15)=a+6x;</p>
+                <p>x+2x+ax+bx=23780.</p>
+            </li>
+
+            <li>
+                <p><b>Выведите в консоль стихотворение (соблюдайте все переносы и абзацы):</b></p>
+                <br>
+                <p>Бывало, спит у ног собака,</p>
+                <p>костер занявшийся гудит,</p>
+                <p>и женщина из полумрака</p>
+                <p>глазами зыбкими глядит.</p>
+                <br>
+                <p>Потом под пихтою приляжет</p>
+                <p>на куртку рыжую мою</p>
+                <p>и мне, задумчивая, скажет:</p>
+                <br>
+                <p>"А ну-ка, спой!.."- и я пою.</p>
+            </li>
+            <li>
+                <p><b>Есть восемь текстовых строк (создайте 8 переменных), составьте из них грамотные по
+                        смыслу предложения (1 абзац, переменная text):</b></p>
+                <br>
+                <ul type="disc">
+                    <li>«индо земля зашаталась под ногами-и вырос,»;</li>
+                    <li>«и заревел он голосом диким…»;</li>
+                    <li>«блеснула молния и ударил гром,»;</li>
+                    <li>«а так какое-то чудище, страшное и мохнатое,»;</li>
+                    <li>«как будто из-под земли, перед купцом:»;</li>
+                    <li>«Он подошёл и сорвал аленький цветочек.»;</li>
+                    <li>«зверь не зверь, человек не человек,»;</li>
+                    <li>«В ту же минуту, безо всяких туч,».</li>
+                </ul>
+            </li>
+        </ol>
+
+    </div>
+
+    <script src="js/script1.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/script3.js"></script>
+    <script src="js/script4.js"></script>
+    <script src="js/script5.js"></script>
+    <script src="js/script6.js"></script>
+    <script src="js/script7.js"></script>
+
 </body>
+
 </html>

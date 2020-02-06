@@ -1,0 +1,152 @@
+* {
+    outline: 0 !important;
+}
+
+* p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 50px;
+    padding: 15px;
+}
+.container>p {
+    padding-left: 20px;
+}
+ol>li:not(:first-child) {
+    margin-top: 7px;
+}
+h2 {
+    padding-top: 20px;
+}
+
+.space {
+    padding-left: 20px;
+}
+
+pre {
+    font-size: 14px;
+}
+
+.comment {
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+.opacityNone {
+    opacity: 0;
+}
+
+
+/* Блок сообщения */
+#message {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+    transition: all 1s ease-out;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Крестик */
+.closebtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    float: right;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+button:hover {
+    background: rgba(163, 107, 2, 0.8);
+    border-radius: 2%;
+    border-radius: 10px;
+    border: 0;
+}
+
+button p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg, #34d058, #1c6e2f 90%);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 200px;
+    height: 65px;
+    border: 0;
+    cursor: pointer;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Animated scroll */
+.btn-scrollUp {
+    position: fixed;
+    bottom: 75px;
+    right: 22px;
+    background-color: rgba(14, 134, 64, .5);
+    border-radius: 25%;
+    -webkit-transition: .3s linear;
+    transition: .3s linear
+}
+
+.btn-scrollUp a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer
+}
+
+.btn-scrollUp a span {
+    display: block;
+    height: 3px;
+    width: 12px;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.btn-scrollUp a span:first-child {
+    margin-right: -2.5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.btn-scrollUp a span:last-child {
+    margin-left: -2.5px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg)
+}
+
+.btn-scrollUp:hover {
+    background-color: #0e8640;
+    -webkit-transition: .3s linear;
+    transition: .3s linear
+}
