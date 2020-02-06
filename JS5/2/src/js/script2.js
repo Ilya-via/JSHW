@@ -14,6 +14,7 @@ switch (address) {
 }
 
 function message(item) {
+    
     function deleteMessage() {
         setTimeout(function () {
             document.body.removeChild(messageContainer);

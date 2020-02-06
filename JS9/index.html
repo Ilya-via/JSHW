@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script1.js"></script>
+    <title>Test explorers</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h4>Дан список, в которой хранятся исследователи и топонимы (имена мест) где они бывали. <br> Список имеет
+                следующий формат:</h4>
+            <p> [ </p>
+            <p class="space">[explorer1, toponym1, toponym2, ...],</p>
+            <p class="space">[explorer2, toponym2, toponym3, ...],</p>
+            <p class="space">[explorer3, toponym4, toponym1, ...],</p>
+            <p class="space">...</p>
+            <p> ]</p>
+
+            <h4>Надо развернуть этот список, таким образом, чтобы на первом месте оказался топоним, а на остальных
+                исследователи.</h4>
+        </div>
+
+        <div>
+            <h2>Формат ввода</h2>
+            <p>[</p>
+            <p class="space">["Mallory", "Everest", "Mont Blanc", "Pillar Rock"],</p>
+            <p class="space">["Mawson", "South Pole", "New Hebrides"],</p>
+            <p class="space">["Hillary", "Everest", "South Pole"]</p>
+            <p>]</p>
+        </div>
+
+        <div>
+            <h2>Формат вывода</h2>
+            <p>[</p>
+            <p class="space">["Everest", "Hillary", "Mallory"],</p>
+            <p class="space">["South Pole", "Hillary", "Mawson"],</p>
+            <p class="space">["Mont Blanc", "Mallory"],</p>
+            <p class="space">["Pillar Rock", "Mallory"],</p>
+            <p class="space">["New Hebrides", "Mawson"]</p>
+            <p>]</p>
+        </div>
+
+
+        <div >
+
+            <button type="submit" onclick="messageVisible()">
+                <p>Исходный Код</p>
+            </button>
+
+            <div class="hidden opacityNone" id="message">
+                <span class="closebtn" onclick="messageUnvisible()">&times;</span>
+                <code>
+                    <pre>
+    var massive = [
+            ["Mallory", "Everest", "Mont Blanc", "Pillar Rock"],
+            ["Mawson", "South Pole", "New Hebrides"],
+            ["Hillary", "Everest", "South Pole"]
+    ];
+        
+    var resultStr = [];
+    var massiveHeight = massive.length; <span class="comment">// число explorer-ов</span>
+    
+    
+    <span class="comment">// Добавление toponym-ов в массив без проверки на копии</span>
+    for (let a = 0; a < massive.length; a++) {
+        for (let i = 1; i < massive[a].length; i++) {
+            resultStr.push(massive[a][i]); <span class="comment">// massive[a][b] - выбранный toponym</span>
+        }
+    }
+    
+    function arrayUnique(arr) {
+        return arr.filter((e, i, a) => a.indexOf(e) == i)
+    }
+    <span class="comment">// Осортированные toponym-ы в одном массиве: "каждый является строкой".</span>
+    var result = (arrayUnique(resultStr));
+    
+    <span class="comment">// Осортированные toponym-ы лежащие: "каждый в отдельном массиве".</span>
+    var finalMassive = [];
+    for (let i = 0; i < result.length; i++) {
+        finalMassive.push([result[i]]);
+    }
+    <span class="comment">// Проверка на копии</span>
+    for (let i = 0; i < massive.length; i++) {  <span class="comment">// Внутри 3-х строк</span>
+        for (let a = 0; a < result.length; a++) {
+            for (let b = 1; b < massive[i].length; b++) {
+                if (result[a] == massive[i][b]) {
+    
+                    <span class="comment">// massive[i]        Для строки</span>
+                    <span class="comment">// massive[i][b]     Для значений строки</span>
+                    <span class="comment">// result[a]         выбираю toponym-строку</span>
+                    <span class="comment">// finalMassive[1]   выбираю toponym-массив</span>
+                    <span class="comment">// massive[i][0]     explorer</span>
+                    if (i == 0) { finalMassive[a].push(massive[0][0]) }
+                    if (i == 1) { finalMassive[a].push(massive[1][0]) }
+                    if (i == 2) { finalMassive[a].push(massive[2][0]) }
+    
+                }
+            }
+        }
+    }
+    console.info(massive);
+    console.info(finalMassive);
+                </pre>
+                </code>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/other.js"></script>
+</body>
+
+</html>
