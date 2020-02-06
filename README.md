@@ -8,36 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Test explorers</title>
-    
-     <style>
-    * p {
-    margin: 0;
-    padding: 0;
-
-}
-.container {
-    width: 1170px;
-    margin: 0 50px;
-    padding: 15px;
-}
-
-h2 {
-    padding-top: 20px;
-}
-
-.space {
-    padding-left: 20px;
-}
-
-pre {
-    font-size: 14px;
-}
-
-.comment {
-    color: green;
-}
-
-    </style>
+ 
 </head>
 
 <body>
@@ -51,11 +22,9 @@ pre {
             <p class="space">[explorer3, toponym4, toponym1, ...],</p>
             <p class="space">...</p>
             <p> ]</p>
-
-            <h4>Надо развернуть этот список, таким образом, чтобы на первом месте оказался топоним, а на остальных
-                исследователи.</h4>
         </div>
-
+<h4>Надо развернуть этот список, таким образом, чтобы на первом месте оказался топоним, а на остальных
+                исследователи.</h4>
         <div>
             <h2>Формат ввода</h2>
             <p>[</p>
