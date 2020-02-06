@@ -3,6 +3,17 @@
 <br>
 <br>
 
+<h2>JS5</h2>
+<b>Предлагается ввести один из 4-х GET паремтров, после чего на экран выводиться соответствующий popUp.</b>
+<br>
+<ul>
+    <li>?alert=form-error</li>
+    <li>?alert=hello</li>
+    <li>?alert=form-sent</li>
+    <li>?alert=msg-sent</li>
+</ul>
+<br>
+
 <h2>JS6</h2>
 <b>Плавное скрытие элементов страницы.</b>
 <br>
