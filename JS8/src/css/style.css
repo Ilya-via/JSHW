@@ -19,7 +19,6 @@ button p {
 }
 
 button {
-    background-color: #00bc9c;
     background-repeat: no-repeat;
     vertical-align: middle;
     width: 200px;
@@ -28,8 +27,7 @@ button {
     cursor: pointer;
     margin: 50px auto;
     border-radius: 10px !important;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .errorMessage {
