@@ -3,6 +3,13 @@
 <br>
 <br>
 <br>
+
+<h2>JS8</h2>
+**Простая форма на Bootstrap с валидацией**
+<br>
+<br>
+<br>
+
 <h2>JS9</h2>
 <!DOCTYPE html>
 <html lang="ru">
