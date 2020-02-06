@@ -14,33 +14,35 @@
         <div>
             <h4>Дан список, в которой хранятся исследователи и топонимы (имена мест) где они бывали. <br> Список имеет
                 следующий формат:</h4>
-            <p> [ </p>
-            <p class="space">[explorer1, toponym1, toponym2, ...],</p>
-            <p class="space">[explorer2, toponym2, toponym3, ...],</p>
-            <p class="space">[explorer3, toponym4, toponym1, ...],</p>
-            <p class="space">...</p>
-            <p> ]</p>
+            <span> [ </span>
+            <span>[explorer1, toponym1, toponym2, ...],</span>
+            <span>[explorer2, toponym2, toponym3, ...],</span>
+            <span>[explorer3, toponym4, toponym1, ...],</span>
+            <span>...</span>
+            <span> ]</span>
         </div>
-<h4>Надо развернуть этот список, таким образом, чтобы на первом месте оказался топоним, а на остальных
+            <h4>Надо развернуть этот список, таким образом, чтобы на первом месте оказался топоним, а на остальных
                 исследователи.</h4>
         
             <h2>Формат ввода</h2>
-            <p>[</p>
-            <p class="space">["Mallory", "Everest", "Mont Blanc", "Pillar Rock"],</p>
-            <p class="space">["Mawson", "South Pole", "New Hebrides"],</p>
-            <p class="space">["Hillary", "Everest", "South Pole"]</p>
-            <p>]</p>
+            <span>[</span>
+            <span>["Mallory", "Everest", "Mont Blanc", "Pillar Rock"],</span>
+            <span>["Mawson", "South Pole", "New Hebrides"],</span>
+            <span>["Hillary", "Everest", "South Pole"]</span>
+            <span>]</span>
        
 
        
             <h2>Формат вывода</h2>
-            <p>[</p>
-            <p class="space">["Everest", "Hillary", "Mallory"],</p>
-            <p class="space">["South Pole", "Hillary", "Mawson"],</p>
-            <p class="space">["Mont Blanc", "Mallory"],</p>
-            <p class="space">["Pillar Rock", "Mallory"],</p>
-            <p class="space">["New Hebrides", "Mawson"]</p>
-            <p>]</p>
+            <span>[</span>
+            <span>["Everest", "Hillary", "Mallory"],</span>
+            <span>["South Pole", "Hillary", "Mawson"],</span>
+            <span>["Mont Blanc", "Mallory"],</span>
+            <span>["Pillar Rock", "Mallory"],</span>
+            <span>["New Hebrides", "Mawson"]</span>
+            <span>]</span>
+
+            
         
 
  </body>
