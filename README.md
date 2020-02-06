@@ -7,10 +7,10 @@
 <b>Предлагается ввести один из 4-х GET паремтров, после чего на экран выводиться соответствующий popUp.</b>
 <br>
 <ul>
-    <li>?alert=form-error</li>
-    <li>?alert=hello</li>
-    <li>?alert=form-sent</li>
-    <li>?alert=msg-sent</li>
+    <li>?alert=form-error – показывается сообщение об ошибке отправки формы (тип error);</li>
+    <li>?alert=hello – сообщение об успешной отправки формы (тип alert);</li>
+    <li>?alert=form-sent – «Добро пожаловать на сайт!» (тип msg)</li>
+    <li>?alert=msg-sent – «Вам письмо!» (тип alert)</li>
 </ul>
 <br>
 
