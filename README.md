@@ -1,7 +1,7 @@
 # JSHW
 Решение типовых задач по JS для повышения уровня знаний и навыков.
 
-
+<h2>JS9</h2>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -24,16 +24,16 @@
         <b>Надо развернуть этот список, таким образом, чтобы на первом месте оказался топоним, а на остальных
             исследователи.</b>
 
-       
-            <pre>
-[
+<h3>Формат ввода</h3>       
+  <pre>
+ [
     ["Mallory", "Everest", "Mont Blanc", "Pillar Rock"],
     ["Mawson", "South Pole", "New Hebrides"],
     ["Hillary", "Everest", "South Pole"]
-]
-</pre>
-      
-            <pre>
+ ]</pre>
+
+<h3>Формат вывода</h3>
+   <pre>
 [
     ["Everest", "Hillary", "Mallory"],
     ["South Pole", "Hillary", "Mawson"],
@@ -42,12 +42,7 @@
     ["New Hebrides", "Mawson"]
 ]
 </pre>
-        
-
    
-
-
-
 </body>
 
 </html>
